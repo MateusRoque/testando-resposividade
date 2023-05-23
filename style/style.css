@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --cor-primaria: #d4adfc;
+  --cor-secundaria: white;
+  --cor-terciária: #3f3d56;
+  --cor-quartenária: #3f3d56;
+  --cor-branca: white;
+}
+
+:root {
+  --font-textos: "Montserrat";
+  --font-titulos: "Raleway";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-secundaria);
+}
+
+.cabecalho {
+  width: 100%;
+  background-color: var(--cor-terciária);
+}
+
+.cabecalho-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cabecalho-nav-lista {
+  padding: 1.5rem;
+  display: flex;
+  gap: 20px;
+  font-family: var(--font-titulos);
+  font-size: 1.3rem;
+}
+
+.cabecalho-nav-link {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+.content-section-parabens {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 5%;
+}
+.content-titulo-topo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  color: var(--cor-primaria);
+  font-family: var(--font-titulos);
+  font-size: 1.5rem;
+}
+
+.titulo-color {
+  color: var(--cor-quartenária);
+  font-size: 3rem;
+}
+.img {
+  height: 50%;
+  width: 30%;
+}
+
+.content-section-carta {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding: 5rem;
+}
+.content-titulo {
+  color: var(--cor-primaria);
+  font-family: var(--font-titulos);
+  font-size: 2rem;
+  padding: 5%;
+}
+
+.content-paragrafo {
+  font-family: var(--font-textos);
+  font-size: 1rem;
+  text-align: justify;
+  color: var(--cor-quartenária);
+}
+.content-titulo-fotos {
+  color: var(--cor-primaria);
+  font-family: var(--font-titulos);
+  font-size: 2rem;
+  padding: 5%;
+  text-align: center;
+}
+.content-section-fotos {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.box-fotos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  column-gap: 1.5rem;
+  padding: 5%;
+  border: 1px solid var(--cor-terciária);
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 5px var(--cor-primaria);
+}
+.footer {
+  background-color: var(--cor-terciária);
+  text-align: center;
+  font-family: var(--font-titulos);
+  font-size: 1.3rem;
+  color: var(--cor-secundaria);
+}
+
+@media (max-width: 604px) {
+  .img {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .cabecalho-nav-lista {
+    font-size: 1rem;
+  }
+  .content-section-parabens {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding: 5%;
+  }
+  .content-section-carta {
+    left: auto;
+    top: 10%;
+    width: 100%;
+    padding: 5%;
+  }
+  .content-titulo {
+    padding: auto;
+  }
+  .content-section-fotos {
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+}
